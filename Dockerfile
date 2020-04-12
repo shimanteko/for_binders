@@ -8,5 +8,3 @@ COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
-#RUN ["sudo", "chmod", "+x", "/home/jovyan/run.sh"]
-ENTRYPOINT ["/home/jovyan/run.sh"]
